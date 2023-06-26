@@ -677,7 +677,7 @@ req = prepare_request_for_toolkit(request)
 auth = OneLogin_Saml2_Auth(req)   # Constructor of the SP, loads settings.json
                                   # and advanced_settings.json
 
-auth.login()      # This method will build and return a URL that can be
+auth.login()      # This method will build and return a AuthNRequest URL that can be
                   # either redirected to, or printed out onto the screen as a hyperlink
 ```
 
